@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 viewEngine(app);
 initWebRoute(app);
 
-const port = process.env.PORT || 6969;
+const port = process.env.PORT;
 
 app.listen(port, () => {
     console.log("Backend Nodejs is running on the port: " + port);
